@@ -63,7 +63,7 @@ if 'poem' not in st.session_state:
 st.title('Dearly 💖')
 
 if not st.session_state.poem:
-    st.header('A meaningful poem for you')
+    st.header('A poem written only for you')
     name = st.text_input('Enter name:')
     gender = st.selectbox('Select gender:', ['Male', 'Female'])
     
@@ -96,4 +96,5 @@ else:
     with col2:
         if st.button('Create New'):
             st.session_state.poem = ""
+
             st.rerun()
