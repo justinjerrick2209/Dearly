@@ -34,7 +34,7 @@ def generatePoem(name, gender):
         middle = random.sample(data['middles'], 4)
         closers = random.sample(data['closers'], 4)
         
-        s1 = [line.replace("{name}"=name).strip() for line in opener]
+        s1 = [line.replace("{name}", name).strip() for line in opener]
         s2 = [line.strip() for line in middle]
         s3 = [line.strip() for line in closers]
         
@@ -98,4 +98,5 @@ else:
             st.session_state.poem = ""
 
             st.rerun()
+
 
