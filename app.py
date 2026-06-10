@@ -2,8 +2,6 @@ import streamlit as st
 import random
 import json
 import google.generativeai as genai
-from PIL import Image, ImageDraw, ImageFont
-import io
 
 st.set_page_config(page_title='Dearly', page_icon='💖', layout="centered")
 
